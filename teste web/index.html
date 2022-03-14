@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Allow Voice Synthesis</button>
+<script src="artyom.window.js"></script>
+<script>
+    var Jarvis = new Artyom();
+    
+    // Needed user interaction at least once in the website to make
+    // it work automatically without user interaction later... thanks google .i.
+    document.getElementById("btn").addEventListener("click", function(){
+        Jarvis.say("Hello World !");
+    }, false);
+</script>
+</body>
+</html>
